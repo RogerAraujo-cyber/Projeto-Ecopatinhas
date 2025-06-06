@@ -1,0 +1,24 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: "Shrikhand Regular";
+    src: url(./fonts/Shrikhand/Shrikhand-Regular.ttf);
+}
+
+:root{
+--preto: #000000;
+--branco: #FFFFFF;
+--marron: #A36D37;
+--Laranja: #FF7900;
+}
+
+.container-grid {
+    width: 80vw;
+    max-width: 10px;
+    margin: 0 auto;
+}
+
