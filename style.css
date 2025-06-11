@@ -4,21 +4,77 @@
     box-sizing: border-box;
 }
 
+
 @font-face {
-    font-family: "Shrikhand Regular";
-    src: url(./fonts/Shrikhand/Shrikhand-Regular.ttf);
+    font-family: "Recursive";
+    src: url(./fonts/Recursive-VariableFont_CASL\,CRSV\,MONO\,slnt\,wght.ttf);
 }
 
-:root{
---preto: #000000;
---branco: #FFFFFF;
---marron: #A36D37;
---Laranja: #FF7900;
+:root {
+    --branco: #FFFFFF;
+    --preto: #000000;
+    --laranja:#F15A24; 
 }
 
-.container-grid {
+.espacosLateral {
+    max-width: 1400px;
     width: 80vw;
-    max-width: 10px;
-    margin: 0 auto;
+    margin: 0 auto
 }
 
+.banner {
+    background-image: url(./imgs/Group\ 54.png);
+    height: 100vh;
+    background-repeat: no-repeat;
+}
+
+header img {
+    width: 253px;
+}
+
+header {
+    height: 165px;
+}
+
+header.espacosLaterais {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.menu {
+    max-width: 700px;
+    width: 70%;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.menu a {
+    color: #ffffff;
+    font-size: 20px;
+    text-decoration: underline transparent;
+}
+
+.menu img{
+    height: 700px;
+    width: 650px;
+    margin-top: 1300px;
+    margin-right: 400px;
+}
+section img{
+    max-width: 500px;
+    width: 75%;
+    border-radius: 25px;
+    box-shadow: 0 17px 17px 0 rgba(0, 0, 0, 0.3);
+    
+}
+
+section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    margin-top: 100px;
+    margin: 150px;
+}
