@@ -13,7 +13,8 @@
 :root {
     --branco: #FFFFFF;
     --preto: #000000;
-    --laranja:#F15A24; 
+    --laranja: #F15A24;
+    --marron: #A36D37;
 }
 
 .espacosLateral {
@@ -22,6 +23,7 @@
     margin: 0 auto
 }
 
+/* ----------------------banner------------------- */
 .banner {
     background-image: url(./imgs/Group\ 54.png);
     height: 100vh;
@@ -30,6 +32,10 @@
 
 header img {
     width: 253px;
+}
+
+#campo-pesquisa {
+    width: 800px;
 }
 
 header {
@@ -42,39 +48,156 @@ header.espacosLaterais {
     justify-content: space-between;
 }
 
-.menu {
-    max-width: 700px;
-    width: 70%;
-    display: flex;
-    justify-content: space-between;
-
-}
-
+/* -------------------menu---------------- */
 .menu a {
-    color: #ffffff;
-    font-size: 20px;
+    font-size: 30px;
+    color: white;
+    font-family: "Recursive", sans-linear;
+
     text-decoration: underline transparent;
+    text-decoration-thickness: 2px;
+
+    margin: 50px;
+
 }
 
-.menu img{
-    height: 700px;
-    width: 650px;
-    margin-top: 1300px;
-    margin-right: 400px;
+#sobre {
+    display: flex;
+    align-items: center;
+    gap: 80px;
+    margin-top: 120px;
+    margin-bottom: 120px;
+    font-family: "Recursive";
+    font-size: 30px;
 }
-section img{
-    max-width: 500px;
-    width: 75%;
+
+
+#sobre img {
+    max-width: 460px;
+    width: 40%;
+    border-radius: 40px;
+    box-shadow: 0 10px 10px 0 rgba(0, 0, 0, 0.2);
+}
+
+#sobre p {
+    font-family: "Recursive";
+    font-size: 30px;
+    text-align: justify;
+    margin-top: 60px;
+}
+
+
+.conteudo-banner img {
+    align-items: center;
+
+}
+
+section img {
+    max-width: 700px;
+    width: 55%;
     border-radius: 25px;
-    box-shadow: 0 17px 17px 0 rgba(0, 0, 0, 0.3);
-    
+    box-shadow: 0 17px 17px 0 rgba(0, 0, 0, 0.5);
+
 }
 
-section{
+section {
     display: flex;
     justify-content: center;
     align-items: center;
 
-    margin-top: 100px;
-    margin: 150px;
+    margin-top: 900px;
+    margin: 350px;
+
+}
+
+
+.conteudo-banner img {
+    width: 1000px;
+    display: flex;
+    margin-top: 50px;
+    margin-left: 1065px;
+}
+
+/* -------------------------parallax------------------- */
+#parallax-1 {
+    height: 290px;
+    margin: 0;
+    background-image: url(./imgs/Grv oup\ 33.png);
+    background: linear-gradient(rgba(0, 0, 0, 0.26)), url(./imgs/Group\ 33.png);
+    background-attachment: fixed;
+    background-size: 38%;
+    margin-bottom: 100px;
+}
+
+/* ------------------------------------------------------ */
+.text-img {
+    gap: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.conteudo-sobre p {
+    font-family: "Recursive", sans-linear;
+    margin-top: 90px;
+    font-size: 200px;
+    text-align: justify;
+
+}
+
+.conteudo-sobre {
+    margin-top: -20px;
+}
+
+.titulo {
+    margin-bottom: 0px;
+    color: var(--marron);
+
+}
+
+/* ------------------------------------------------ */
+#parallax-2 {
+    height: 290px;
+    margin: 0;
+    background-image: url(./imgs/Grv oup\ 33.png);
+    background: linear-gradient(rgba(0, 0, 0, 0.26)), url(./imgs/Group\ 33.png);
+    background-attachment: fixed;
+    background-size: 40%;
+    margin-bottom: 85px;
+
+    margin-top: -150px;
+}
+
+/* ------------------cards-------------------------- */
+
+.container-cards {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+
+    position: relative;
+
+    width: 600px;
+    margin: 40px;
+    padding: 60px 40px;
+    border-radius: 40px;
+    background-color: var(--branco);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.6);
+    text-align: center;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.container-cards {
+    margin-top: -250px;
+}
+
+.titulo2 {
+    margin-left: 750px;
+
 }
