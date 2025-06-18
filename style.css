@@ -6,8 +6,8 @@
 
 
 @font-face {
-    font-family: "Recursive", sans-linear;
-    src: url(./fonts/Recursive-VariableFont_CASL\,CRSV\,MONO\,slnt\,wght.ttf);
+    font-family: "Recursive";
+    src: url(./fontes/Recursive-VariableFont_CASL\,CRSV\,MONO\,slnt\,wght.ttf);
 }
 
 :root {
@@ -22,6 +22,28 @@
     width: 80vw;
     margin: 0 auto
 }
+
+
+.titulo2 {
+    display: flex;
+    font-family: "Recursive", sans-linear;
+    font-weight: 600;
+    font-size: 35px;
+}
+
+.titulo2 h2 {
+    color: var(--branco);
+    margin-bottom: 0;
+    background-color: var(--marron);
+    border-radius: 20px;
+    padding: 10px 18px;
+}
+
+.titulo2 span {
+    color: var(--preto);
+    border-bottom: solid 3px var(--marron);
+}
+
 
 /* ----------------------banner------------------- */
 .banner {
@@ -42,7 +64,7 @@ header {
     height: 165px;
 }
 
-header.espacosLaterais {
+header.espacosLateral {
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -52,7 +74,7 @@ header.espacosLaterais {
 .menu a {
     font-size: 30px;
     color: white;
-    font-family: "Recursive",sans-linear;
+    font-family: "Recursive", sans-linear;
 
     text-decoration: underline transparent;
     text-decoration-thickness: 2px;
@@ -80,8 +102,8 @@ header.espacosLaterais {
 }
 
 #sobre p {
-    font-family: "Recursive",sans-linear;
-    font-size: 30px;
+    font-family: "Recursive", sans-linear;
+    font-size: 25px;
     text-align: justify;
     margin-top: 60px;
 }
@@ -92,15 +114,7 @@ header.espacosLaterais {
 
 }
 
-section img {
-    max-width: 700px;
-    width: 350px;
-    border-radius: 100px;
-    box-shadow: 0 17px 17px 0 rgba(0, 0, 0, 0.5);
-
-}
-
-section {
+/* section {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -108,25 +122,24 @@ section {
     margin-top: 400px;
     margin: 150px;
 
-}
+} */
 
 
 .conteudo-banner img {
-    width: 600px;
+    width: 900px;
     display: flex;
-    margin-top: 140px;
-    margin-left: 900px;
+    margin-top: 120px;
+    margin-left: 1000px;
 }
 
 /* -------------------------parallax------------------- */
 #parallax-1 {
     height: 200px;
     margin: 0;
-    background-image: url(./imgs/Grv oup\ 33.png);
-    background: linear-gradient(rgba(0, 0, 0, 0.26)), url(./imgs/Group\ 33.png);
+    /* background-image: url(./imgs/Group33.png); */
+    background: linear-gradient(rgba(0, 0, 0, 0.26)), url(./imgs/Group33.png);
     background-attachment: fixed;
     background-size: 40%;
-    margin-bottom: 100px;
 }
 
 /* ------------------------------------------------------ */
@@ -146,21 +159,16 @@ section {
 }
 
 .conteudo-sobre {
-    margin-top: -20px;
+    margin-top: 65px;
 }
 
-.titulo {
-    margin-bottom: 0px;
-    color: var(--marron);
-
-}
 
 /* ------------------------------------------------ */
 #parallax-2 {
     height: 200px;
     margin: 0;
-    background-image: url(./imgs/Grv oup\ 33.png);
-    background: linear-gradient(rgba(0, 0, 0, 0.26)), url(./imgs/Group\ 33.png);
+    /* background-image: url(./imgs/Group33.png); */
+    background: linear-gradient(rgba(0, 0, 0, 0.26)), url(./imgs/Group33.png);
     background-attachment: fixed;
     background-size: 40%;
     margin-bottom: 85px;
@@ -169,48 +177,81 @@ section {
 }
 
 /* ------------------cards-------------------------- */
-
-.container-cards {
-    display: flex;
+#Servicos .titulo {
     justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
 
-    position: relative;
+}
 
-    width: 350px;
-    margin: 25px;
-    padding: 50px 30px;
-    border-radius: 50px;
+#Servicos .container-cards .card {
+    width: 300px;
+    margin: 20px;
+    padding: 40px 20px;
+    border-radius: 40px;
     background-color: var(--branco);
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.6);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0, 2);
     text-align: center;
 
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    justify-content: space-between;
+}
+
+#Servicos .container-cards {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+
+    margin-top: 90px;
 }
 
 
-.container-cards {
-    margin-top: -100px;
-}
-
-.titulo2 {
-    margin-left: 0px;
-    margin-top: -140px;
-}
 /* ----------------------------- */
-#meuCarrossel {
-    max-width: 1170px;
-    width: 90;
+.titulo {
+    display: flex;
+    font-family: "Recursive", sans-linear;
+    font-weight: 600;
+    font-size: 35px;
 }
 
-.retangulo{
-    margin-left: -400px;
+.titulo h2 {
+    color: var(--branco);
+    margin-bottom: 0;
+    background-color: #A36D37;
+    border-radius: 20px;
+    padding: 10px 18px;
 }
+
+.titulo span {
+    color: var(--preto);
+    border-bottom: solid 3px var(--marron);
+}
+
+
+#meuCarrossel {
+    max-width: 470px;
+    width: 90%;
+}
+
+#cases {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+    margin-bottom: 120px;
+}
+
+#cases img {
+    height: 450px;
+    border-radius: 40px;
+}
+
+.retangulo {
+    margin-left: -20px;
+}
+
+
 /* -----------------contato-------------------- */
 #contato {
     text-align: center;
@@ -259,20 +300,20 @@ section {
     margin-bottom: 50px;
 }
 
-.campo-descricao{
+.campo-descricao {
     width: 60%;
 
     display: flex;
     flex-direction: column;
-    justify-content:space-between ;
+    justify-content: space-between;
 
     margin-bottom: 30px;
 }
 
-.campo input{
-    height:40px;
+.campo input {
+    height: 40px;
 
-    color:var(--preto) ;
+    color: var(--preto);
     background-color: var(--branco);
 
     border: none;
@@ -284,8 +325,8 @@ section {
 }
 
 .campo-descricao textarea {
-    color:var(--preto);
-    background-color:var(--branco);
+    color: var(--preto);
+    background-color: var(--branco);
 
     border: none;
     border-radius: 4px;
@@ -343,3 +384,66 @@ section {
     background-color: var(--marron);
 }
 
+body {
+    margin: 0;
+    background-color: #f9f9f9;
+    font-family: Arial, sans-serif;
+}
+
+.footer {
+    background-color: var(--preto);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px 60px;
+    color: #fff;
+}
+
+.footer-logo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.footer-logo img {
+    width: 200px;
+    margin-bottom: 20px;
+}
+
+.footer-logo p {
+    margin: 0;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.footer-logo span {
+    font-weight: normal;
+    font-size: 14px;
+}
+
+.footer-social {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.social-item {
+    display: flex;
+    align-items: center;
+    font-weight: bold;
+}
+
+.social-item i {
+    font-size: 20px;
+    margin-right: 10px;
+}
+
+.social-item span {
+    font-size: 16px;
+}
+
+.osso {
+    margin-top: -450px;
+    margin-left: 550px;
+}
