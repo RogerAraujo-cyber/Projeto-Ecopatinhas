@@ -6,7 +6,7 @@
 
 
 @font-face {
-    font-family: "Recursive";
+    font-family: "Recursive", sans-linear;
     src: url(./fonts/Recursive-VariableFont_CASL\,CRSV\,MONO\,slnt\,wght.ttf);
 }
 
@@ -52,7 +52,7 @@ header.espacosLaterais {
 .menu a {
     font-size: 30px;
     color: white;
-    font-family: "Recursive", sans-linear;
+    font-family: "Recursive",sans-linear;
 
     text-decoration: underline transparent;
     text-decoration-thickness: 2px;
@@ -80,7 +80,7 @@ header.espacosLaterais {
 }
 
 #sobre p {
-    font-family: "Recursive";
+    font-family: "Recursive",sans-linear;
     font-size: 30px;
     text-align: justify;
     margin-top: 60px;
@@ -94,8 +94,8 @@ header.espacosLaterais {
 
 section img {
     max-width: 700px;
-    width: 55%;
-    border-radius: 25px;
+    width: 350px;
+    border-radius: 100px;
     box-shadow: 0 17px 17px 0 rgba(0, 0, 0, 0.5);
 
 }
@@ -105,27 +105,27 @@ section {
     justify-content: center;
     align-items: center;
 
-    margin-top: 900px;
-    margin: 350px;
+    margin-top: 400px;
+    margin: 150px;
 
 }
 
 
 .conteudo-banner img {
-    width: 1000px;
+    width: 600px;
     display: flex;
-    margin-top: 50px;
-    margin-left: 1065px;
+    margin-top: 140px;
+    margin-left: 900px;
 }
 
 /* -------------------------parallax------------------- */
 #parallax-1 {
-    height: 290px;
+    height: 200px;
     margin: 0;
     background-image: url(./imgs/Grv oup\ 33.png);
     background: linear-gradient(rgba(0, 0, 0, 0.26)), url(./imgs/Group\ 33.png);
     background-attachment: fixed;
-    background-size: 38%;
+    background-size: 40%;
     margin-bottom: 100px;
 }
 
@@ -157,7 +157,7 @@ section {
 
 /* ------------------------------------------------ */
 #parallax-2 {
-    height: 290px;
+    height: 200px;
     margin: 0;
     background-image: url(./imgs/Grv oup\ 33.png);
     background: linear-gradient(rgba(0, 0, 0, 0.26)), url(./imgs/Group\ 33.png);
@@ -165,7 +165,7 @@ section {
     background-size: 40%;
     margin-bottom: 85px;
 
-    margin-top: -150px;
+    margin-top: 150px;
 }
 
 /* ------------------cards-------------------------- */
@@ -178,10 +178,10 @@ section {
 
     position: relative;
 
-    width: 600px;
-    margin: 40px;
-    padding: 60px 40px;
-    border-radius: 40px;
+    width: 350px;
+    margin: 25px;
+    padding: 50px 30px;
+    border-radius: 50px;
     background-color: var(--branco);
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.6);
     text-align: center;
@@ -190,14 +190,156 @@ section {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-
+    justify-content: space-between;
 }
 
+
 .container-cards {
-    margin-top: -250px;
+    margin-top: -100px;
 }
 
 .titulo2 {
-    margin-left: 750px;
-
+    margin-left: 0px;
+    margin-top: -140px;
 }
+/* ----------------------------- */
+#meuCarrossel {
+    max-width: 1170px;
+    width: 90;
+}
+
+.retangulo{
+    margin-left: -400px;
+}
+/* -----------------contato-------------------- */
+#contato {
+    text-align: center;
+    padding-bottom: 100px;
+    margin-bottom: 100px;
+}
+
+#contato .titulo {
+    justify-content: center;
+    margin-bottom: 55px;
+}
+
+#contato h2 {
+    margin-left: 5px;
+}
+
+#contato form {
+    width: 90%;
+    max-width: 980px;
+
+    margin: 0 auto;
+    padding: 60px 0;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    border-radius: 40px;
+    background-color: var(--laranja);
+    border: solid 3px var(--preto);
+
+    color: var(--preto);
+    font-family: "Recursive", sans-linear;
+    font-size: 17px;
+}
+
+.campo {
+    width: 60%;
+
+    text-align: left;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    margin-bottom: 50px;
+}
+
+.campo-descricao{
+    width: 60%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content:space-between ;
+
+    margin-bottom: 30px;
+}
+
+.campo input{
+    height:40px;
+
+    color:var(--preto) ;
+    background-color: var(--branco);
+
+    border: none;
+    border-radius: 4px;
+
+    text-indent: 10px;
+
+    outline: none;
+}
+
+.campo-descricao textarea {
+    color:var(--preto);
+    background-color:var(--branco);
+
+    border: none;
+    border-radius: 4px;
+
+    outline: none;
+
+    padding: 10px;
+
+    resize: none;
+}
+
+.campo-label,
+.campo-descricao label {
+    margin-bottom: 15px;
+}
+
+.campo input,
+.campo-descricao textarea {
+    font-family: "Recursive", sans liner;
+    font-size: 17px;
+}
+
+.campo input::placeholder,
+.campo-descricao textarea::placeholder {
+    color: #a0a0a0;
+}
+
+.campo input:focus,
+.campo-descricao textarea:focus {
+    outline: 2px solid var(--laranja);
+}
+
+#contato form button {
+    height: 40px;
+    width: 60%;
+
+    background-color: var(--preto);
+    color: var(--branco);
+
+    border: none;
+    border-radius: 4px;
+
+    font-size: 17px;
+    font-family: "Recursive", sans-linear;
+    font-weight: 700;
+
+    text-transform: uppercase;
+
+    cursor: pointer;
+
+    transition: background-color 500ms;
+}
+
+#contato form button:hover {
+    background-color: var(--marron);
+}
+
